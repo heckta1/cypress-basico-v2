@@ -1,5 +1,7 @@
 name: End-to-end tests 🧪
-on: [push]
+on:
+  schedule:
+    - cron: '30 * * * *'
 jobs:
   cypress-run:
     runs-on: ubuntu-20.04
